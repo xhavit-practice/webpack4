@@ -22,6 +22,13 @@ module.exports = {
   },
   module: {
     rules: [
+      // ejs
+      {
+        test: /\.ejs$/,
+        use: "ejs-webpack-loader"
+      },
+      // hbs
+      { test: /\.hbs$/, use: "handlebars-loader" },
       // js
       {
         // test: /\.js$/,
@@ -31,7 +38,12 @@ module.exports = {
       // less
       {
         test: /\.less$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "less-loader"
+        ]
       },
       // image
       {
@@ -59,6 +71,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css"
     }),
+    // use default ejs(LoDash Templates) as template
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/template/index.html",
@@ -67,6 +80,28 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "search.html",
       template: "src/template/search.html",
+      chunks: ["search"]
+    }),
+    // use ejs(mde/ejs) as template
+    new HtmlWebpackPlugin({
+      filename: "index-ejs.html",
+      template: "src/template/index.ejs",
+      chunks: ["index"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "search-ejs.html",
+      template: "src/template/search.ejs",
+      chunks: ["search"]
+    }),
+    // use handlebars as template
+    new HtmlWebpackPlugin({
+      filename: "index-hbs.html",
+      template: "src/template/index.hbs",
+      chunks: ["index"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "search-hbs.html",
+      template: "src/template/search.hbs",
       chunks: ["search"]
     })
   ]
