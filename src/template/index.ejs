@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <% include meta %>
+  <%= require('./meta.ejs')({bar: 'bar'}) %>
   <title>Document</title>
 </head>
 
-<body></body>
+<body>
+  <%= foo %>
+  <img src="<%= require('../asset/image/vscode-400.png') %>" />
+</body>
 
 </html>

@@ -8665,12 +8665,10 @@ if (false) {} else {
 /*!***************************************!*\
   !*** ./src/asset/image/vscode-48.png ***!
   \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "asset/image/vscode-48.1193a075.png");
+module.exports = __webpack_require__.p + "asset/image/vscode-48.1193a075.png";
 
 /***/ }),
 
@@ -8678,12 +8676,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************!*\
   !*** ./src/asset/image/vscode-600.png ***!
   \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "asset/image/vscode-600.b55b8764.png");
+module.exports = __webpack_require__.p + "asset/image/vscode-600.b55b8764.png";
 
 /***/ }),
 
@@ -8712,7 +8708,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./asset/image/vscode-48.png */ "./src/asset/image/vscode-48.png");
+/* harmony import */ var _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./asset/image/vscode-600.png */ "./src/asset/image/vscode-600.png");
+/* harmony import */ var _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-header.less */ "./src/search-header.less");
 /* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_search_header_less__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _search_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./search.less */ "./src/search.less");
@@ -8759,9 +8757,9 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "search-text"
       }, "Search Text - \u641C\u7D22\u6587\u5B57"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__["default"]
+        src: _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default.a
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__["default"]
+        src: _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default.a
       })));
     }
   }]);
