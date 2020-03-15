@@ -26,7 +26,7 @@ module.exports = merge(config, {
       }
     ]
   },
-  devtool: "none",
+  devtool: env.ENV === "production" ? "none" : "eval-cheap-module-source-map",
   devServer: {
     contentBase: path.join(rootDir, "dist"),
     hot: true

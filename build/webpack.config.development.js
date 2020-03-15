@@ -20,7 +20,7 @@ module.exports = merge(config, {
       }
     ]
   },
-  devtool: "inline-source-map",
+  devtool: "eval-cheap-module-source-map",
   devServer: {
     contentBase: path.join(rootDir, "dist"),
     hot: true
