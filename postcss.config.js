@@ -1,7 +1,7 @@
 module.exports = ctx => {
-  return {
-    plugins: {
-      autoprefixer: ""
-    }
-  };
+    return {
+        plugins: {
+            autoprefixer: '',
+        },
+    };
 };
