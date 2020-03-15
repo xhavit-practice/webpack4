@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import imageVscode48 from "./asset/image/vscode-48.png";
-import imageVscode600 from "./asset/image/vscode-600.png";
-import "./search-header.less";
-import "./search.less";
+import imageVscode48 from "@/common/asset/image/vscode-48.png";
+import imageVscode600 from "@/common/asset/image/vscode-600.png";
+import "@/common/common.less";
+import "./index.less";
 
 class Search extends React.Component {
   render() {

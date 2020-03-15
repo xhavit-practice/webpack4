@@ -3,17 +3,20 @@ const path = require("path");
 // project root dir
 const rootDir = path.resolve(__dirname, "..");
 // html-webpack-plugin config
-const HtmlWebpackPluginConfig = require("../src/template/config");
+const { entry, htmlWebpackPluginConfig } = require("./generateMpaConfig")();
 
 exports.rootDir = rootDir;
 exports.config = {
-  entry: {
-    search: path.join(rootDir, "src/search.js"),
-    index: path.join(rootDir, "./src/index.js")
-  },
+  entry,
   output: {
     path: path.join(rootDir, "dist"),
     hashDigestLength: 8
+  },
+  resolve: {
+    // 这里需要配合jsconfig.js使用，否则ide识别不了路径，开发起来比较麻烦
+    alias: {
+      "@": path.join(rootDir, "src")
+    }
   },
   module: {
     rules: [
@@ -50,5 +53,5 @@ exports.config = {
       }
     ]
   },
-  plugins: [...HtmlWebpackPluginConfig]
+  plugins: [...htmlWebpackPluginConfig]
 };

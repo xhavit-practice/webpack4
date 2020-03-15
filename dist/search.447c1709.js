@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/search.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/search/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -8661,10 +8661,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./src/asset/image/vscode-48.png":
-/*!***************************************!*\
-  !*** ./src/asset/image/vscode-48.png ***!
-  \***************************************/
+/***/ "./src/common/asset/image/vscode-48.png":
+/*!**********************************************!*\
+  !*** ./src/common/asset/image/vscode-48.png ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8672,10 +8672,10 @@ module.exports = __webpack_require__.p + "asset/image/vscode-48.1193a075.png";
 
 /***/ }),
 
-/***/ "./src/asset/image/vscode-600.png":
-/*!****************************************!*\
-  !*** ./src/asset/image/vscode-600.png ***!
-  \****************************************/
+/***/ "./src/common/asset/image/vscode-600.png":
+/*!***********************************************!*\
+  !*** ./src/common/asset/image/vscode-600.png ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8683,9 +8683,9 @@ module.exports = __webpack_require__.p + "asset/image/vscode-600.b55b8764.png";
 
 /***/ }),
 
-/***/ "./src/search-header.less":
+/***/ "./src/common/common.less":
 /*!********************************!*\
-  !*** ./src/search-header.less ***!
+  !*** ./src/common/common.less ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -8694,10 +8694,10 @@ module.exports = __webpack_require__.p + "asset/image/vscode-600.b55b8764.png";
 
 /***/ }),
 
-/***/ "./src/search.js":
-/*!***********************!*\
-  !*** ./src/search.js ***!
-  \***********************/
+/***/ "./src/search/index.js":
+/*!*****************************!*\
+  !*** ./src/search/index.js ***!
+  \*****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8707,14 +8707,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./asset/image/vscode-48.png */ "./src/asset/image/vscode-48.png");
-/* harmony import */ var _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./asset/image/vscode-600.png */ "./src/asset/image/vscode-600.png");
-/* harmony import */ var _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-header.less */ "./src/search-header.less");
-/* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_search_header_less__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _search_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./search.less */ "./src/search.less");
-/* harmony import */ var _search_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_search_less__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _common_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/common/asset/image/vscode-48.png */ "./src/common/asset/image/vscode-48.png");
+/* harmony import */ var _common_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_common_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/common/asset/image/vscode-600.png */ "./src/common/asset/image/vscode-600.png");
+/* harmony import */ var _common_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_common_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_common_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/common/common.less */ "./src/common/common.less");
+/* harmony import */ var _common_common_less__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_common_common_less__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.less */ "./src/search/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8757,9 +8757,9 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "search-text"
       }, "Search Text - \u641C\u7D22\u6587\u5B57"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default.a
+        src: _common_asset_image_vscode_48_png__WEBPACK_IMPORTED_MODULE_2___default.a
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default.a
+        src: _common_asset_image_vscode_600_png__WEBPACK_IMPORTED_MODULE_3___default.a
       })));
     }
   }]);
@@ -8771,10 +8771,10 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 
 /***/ }),
 
-/***/ "./src/search.less":
-/*!*************************!*\
-  !*** ./src/search.less ***!
-  \*************************/
+/***/ "./src/search/index.less":
+/*!*******************************!*\
+  !*** ./src/search/index.less ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

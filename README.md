@@ -1,4 +1,4 @@
-## 使用过的loader
+## 使用过的html相关loader
 
 ### html-loader(^1.0.0-alpha.0) - 推荐
 - 目前唯一一个静态资源也能签名的html loader，也可以自定义各种标签和属性的扩展

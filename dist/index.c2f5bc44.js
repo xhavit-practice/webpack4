@@ -81,15 +81,26 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/helloworld.js":
-/*!***************************!*\
-  !*** ./src/helloworld.js ***!
-  \***************************/
+/***/ "./src/common/common.less":
+/*!********************************!*\
+  !*** ./src/common/common.less ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/common/helloworld.js":
+/*!**********************************!*\
+  !*** ./src/common/helloworld.js ***!
+  \**********************************/
 /*! exports provided: helloworld */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -102,32 +113,21 @@ function helloworld() {
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/index/index.js":
+/*!****************************!*\
+  !*** ./src/index/index.js ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helloworld */ "./src/helloworld.js");
-/* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search-header.less */ "./src/search-header.less");
-/* harmony import */ var _search_header_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_search_header_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/common/helloworld */ "./src/common/helloworld.js");
+/* harmony import */ var _common_common_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/common/common.less */ "./src/common/common.less");
+/* harmony import */ var _common_common_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_common_common_less__WEBPACK_IMPORTED_MODULE_1__);
 
 
-document.write("".concat(Object(_helloworld__WEBPACK_IMPORTED_MODULE_0__["helloworld"])(), " - index sseex2x3sssddddd"));
-
-/***/ }),
-
-/***/ "./src/search-header.less":
-/*!********************************!*\
-  !*** ./src/search-header.less ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
+document.write("".concat(Object(_common_helloworld__WEBPACK_IMPORTED_MODULE_0__["helloworld"])(), " - index 6"));
 
 /***/ })
 
