@@ -24,6 +24,7 @@
         "dotenv": "^8.2.0",
         "ejs-loader": "^0.3.5",
         "file-loader": "^5.0.2",
+        "friendly-errors-webpack-plugin": "^1.7.0",
         "handlebars": "^4.7.3",
         "html-webpack-plugin": "^4.0.0-beta.14",
         "less": "^3.11.1",

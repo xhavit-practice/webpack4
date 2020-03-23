@@ -1,4 +1,5 @@
 const path = require('path');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 // project root dir
 const rootDir = path.resolve(__dirname, '..');
@@ -53,5 +54,5 @@ exports.config = {
             },
         ],
     },
-    plugins: [...htmlWebpackPluginConfig],
+    plugins: [...htmlWebpackPluginConfig, new FriendlyErrorsWebpackPlugin()],
 };

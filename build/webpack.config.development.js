@@ -11,6 +11,8 @@ module.exports = merge(config, {
         // 在devServer模式下必须使用hash，不能使用contentHash或者chunkHash
         filename: '[name].[hash].js',
     },
+    devtool: 'eval-cheap-module-source-map',
+    stats: 'minimal',
     module: {
         rules: [
             // less
@@ -25,7 +27,6 @@ module.exports = merge(config, {
             },
         ],
     },
-    devtool: 'eval-cheap-module-source-map',
     devServer: {
         contentBase: path.join(rootDir, 'dist'),
         hot: true,

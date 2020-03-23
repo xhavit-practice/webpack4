@@ -1,5 +1,4 @@
-const { parsed: env } = require('dotenv').config();
-const webpack = require('webpack');
+const dotenv = require('dotenv');
 const merge = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -8,13 +7,16 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 
 // webpack base config
 const { config, rootDir } = require('./webpack.config.base');
+// env variables
+const { parsed: env } = dotenv.config();
 
 module.exports = merge(config, {
-    // 在本地build设置成development，这样方便分析打包后的代码
     mode: env.ENV || 'production',
     output: {
         filename: '[name].[chunkHash].js',
     },
+    devtool: 'none',
+    stats: 'errors-warnings',
     module: {
         rules: [
             // less
@@ -29,8 +31,8 @@ module.exports = merge(config, {
             },
         ],
     },
-    devtool: env.ENV === 'production' ? 'none' : 'eval-source-map',
     optimization: {
+        minimize: env.MINIMIZE === 'true',
         runtimeChunk: {
             name: entryPoint => `~runtime.${entryPoint.name}`,
         },
@@ -68,5 +70,20 @@ module.exports = merge(config, {
             filename: '[name].[contenthash].css',
         }),
         new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+        // handleBuildErrorPlugin,
     ],
 });
+
+// 主动捕获并处理构建错误，抛出错误码，webpack4中已经默认处理
+function handleBuildErrorPlugin() {
+    this.hooks.done.tap('done', stats => {
+        if (
+            stats.compilation.errors &&
+            stats.compilation.errors.length &&
+            process.argv.indexOf('--watch') == -1
+        ) {
+            console.log('build error');
+            process.exit(1111);
+        }
+    });
+}
