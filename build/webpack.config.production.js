@@ -47,7 +47,7 @@ module.exports = merge(config, {
             cacheGroups: {
                 default: false,
                 defaultVendors: false,
-                '~vender': {
+                '~vendor': {
                     test: /[\\/]node_modules[\\/]/,
                     maxSize: 1024 * 500,
                     enforce: true,

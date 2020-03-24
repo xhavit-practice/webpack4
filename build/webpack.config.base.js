@@ -24,13 +24,13 @@ exports.config = {
             // html
             {
                 test: /\.ejs$/,
-                loader: 'ejs-loader',
+                loader: ['ejs-loader'],
             },
             // js
             {
                 // test: /\.js$/,
                 test: /\.js$/,
-                loader: 'babel-loader',
+                use: ['babel-loader', 'eslint-loader'],
             },
             // image
             {
