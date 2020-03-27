@@ -28,7 +28,6 @@ exports.config = {
             },
             // js
             {
-                // test: /\.js$/,
                 test: /\.js$/,
                 use: ['babel-loader', 'eslint-loader'],
             },
