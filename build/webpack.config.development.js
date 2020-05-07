@@ -25,6 +25,16 @@ module.exports = merge(config, {
                     'less-loader',
                 ],
             },
+            // sass
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ],
+            },
         ],
     },
     devServer: {

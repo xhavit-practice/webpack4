@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Counter from './Counter';
 import '@/common/common.less';
 import { b } from './b';
 import './index.less';
 
-class Index extends React.Component {
+export default class Index extends React.Component {
     constructor(props) {
         super(props);
 
@@ -26,7 +27,12 @@ class Index extends React.Component {
     }
 
     render() {
-        return <div>{b}</div>;
+        return (
+            <div>
+                <div>{b}</div>
+                <Counter />
+            </div>
+        );
     }
 }
 

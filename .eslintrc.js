@@ -28,7 +28,23 @@ module.exports = {
         // react
         'react/jsx-indent': ['error', 4],
         'react/jsx-filename-extension': 'off',
+        'react/jsx-one-expression-per-line': 'off',
     },
+    overrides: [
+        {
+            files: ['*.spec.js', 'mocha/smoke/**/*.js'],
+            env: {
+                // adds all of the Mocha testing global variables
+                mocha: true,
+            },
+            rules: {
+                // Passing arrow functions (aka "lambdas") to Mocha is discouraged
+                // https://mochajs.org/#arrow-functions
+                // 因此在mocha的测试用例中会多用匿名函数
+                'func-names': 'off',
+            },
+        },
+    ],
     settings: {
         // supporting module alias
         // https://github.com/johvin/eslint-import-resolver-alias

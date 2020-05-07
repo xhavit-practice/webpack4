@@ -28,12 +28,22 @@ module.exports = merge(config, {
                     'less-loader',
                 ],
             },
+            // sass
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ],
+            },
         ],
     },
     optimization: {
         minimize: env.MINIMIZE === 'true',
         runtimeChunk: {
-            name: entryPoint => `~runtime.${entryPoint.name}`,
+            name: (entryPoint) => `~runtime.${entryPoint.name}`,
         },
         // 用splitChunks分离出来的包需要html-webpack-plugin@next(^4.0.0-beta.14)才能inject到template中
         // 之前的版本只能依赖entry属性inject
