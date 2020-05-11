@@ -1,18 +1,12 @@
-# 使用过的html相关loader
 
-## status
+
+# CI Status
 [![Build Status](https://travis-ci.com/xhavit-practice/webpack4.svg?branch=master)](https://travis-ci.com/xhavit-practice/webpack4)
 
-## workflow
-- Make changes
-- Commit those changes
-- Make sure Travis turns green
-- Bump version in package.json
-- conventionalChangelog
-- Commit package.json and CHANGELOG.md files
-- Tag
-- Push
+# Recommended workflow
+[Reference conventional-changlog workflow](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#recommended-workflow)
 
+# Html Loader
 ## html-loader(^1.0.0-alpha.0)
 - 目前唯一一个静态资源也能签名的html loader，也可以自定义各种标签和属性的扩展
 - 默认支持v0.5.5的interpolate属性(1.0.0版本已经被移除)，可以使用${xxxxx}的语法，灵活的引入其他资源
