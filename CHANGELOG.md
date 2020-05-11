@@ -1,3 +1,15 @@
+<a name="0.0.3"></a>
+## [0.0.3](https://github.com/xhavit-practice/webpack4/compare/v0.0.2...v0.0.3) (2020-05-11)
+
+
+### Features
+
+* add test2.js ([2b9c10b](https://github.com/xhavit-practice/webpack4/commit/2b9c10b))
+* delete test.js ([18a5005](https://github.com/xhavit-practice/webpack4/commit/18a5005))
+* delete tests.js ([d49485a](https://github.com/xhavit-practice/webpack4/commit/d49485a))
+
+
+
 <a name="0.0.2"></a>
 ## [0.0.2](https://github.com/xhavit-practice/webpack4/compare/v0.0.1...v0.0.2) (2020-05-11)
 
