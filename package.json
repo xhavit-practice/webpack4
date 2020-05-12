@@ -10,8 +10,9 @@
         "test:unit": "cross-env NODE_ENV=test nyc mocha",
         "build": "webpack --config build/webpack.config.production.js",
         "build:xxx": "webpack --config xxx/webpack.config.js",
+        "version": "npm run changlog && git add CHANGELOG.md",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-        "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+        "changelog:all": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
     },
     "keywords": [],
     "author": "",
