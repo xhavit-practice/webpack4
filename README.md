@@ -3,7 +3,7 @@
 # CI Status
 [![Build Status](https://travis-ci.com/xhavit-practice/webpack4.svg?branch=master)](https://travis-ci.com/xhavit-practice/webpack4)
 
-# Recommended workflow
+# Recommended Workflow
 [Reference conventional-changlog workflow](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#recommended-workflow)
 
 # Html Loader
