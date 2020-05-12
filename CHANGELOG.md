@@ -1,3 +1,13 @@
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/xhavit-practice/webpack4/compare/v0.0.3...v0.0.5) (2020-05-12)
+
+
+### Features
+
+* add test3.js ([c993ffa](https://github.com/xhavit-practice/webpack4/commit/c993ffa))
+
+
+
 <a name="0.0.3"></a>
 ## [0.0.3](https://github.com/xhavit-practice/webpack4/compare/v0.0.2...v0.0.3) (2020-05-11)
 
