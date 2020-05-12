@@ -1,10 +1,16 @@
-
-
 # CI Status
 [![Build Status](https://travis-ci.com/xhavit-practice/webpack4.svg?branch=master)](https://travis-ci.com/xhavit-practice/webpack4)
 
+
 # Recommended Workflow
 [Reference conventional-changlog workflow](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli#recommended-workflow)
+
+- Make changes
+- Commit those changes
+- Pull all the tags
+- Run the `npm version [patch|minor|major]` command
+- Push
+
 
 # Html Loader
 ## html-loader(^1.0.0-alpha.0)
