@@ -1,3 +1,13 @@
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/xhavit-practice/webpack4/compare/v0.0.5...v0.0.6) (2020-05-12)
+
+
+### Features
+
+* delete test3.js ([dfd65b2](https://github.com/xhavit-practice/webpack4/commit/dfd65b2))
+
+
+
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/xhavit-practice/webpack4/compare/v0.0.3...v0.0.5) (2020-05-12)
 
