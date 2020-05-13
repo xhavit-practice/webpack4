@@ -1,9 +1,11 @@
+const webpack = require('webpack');
 const dotenv = require('dotenv');
 const merge = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 
 const smp = new SpeedMeasurePlugin();
 
@@ -83,6 +85,13 @@ module.exports = smp.wrap(
                 filename: '[name].[contenthash].css',
             }),
             new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+            new webpack.DllReferencePlugin({
+                // eslint-disable-next-line
+                manifest: require('./dll/vendor.manifest.json'),
+            }),
+            new AddAssetHtmlPlugin([
+                { filepath: require.resolve('./dll/vendor.dll.js') },
+            ]),
             // handleBuildErrorPlugin,
         ],
     })
