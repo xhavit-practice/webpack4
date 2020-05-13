@@ -30,6 +30,7 @@ exports.config = {
             {
                 test: /\.js$/,
                 use: ['babel-loader', 'eslint-loader'],
+                // use: ['thread-loader', 'babel-loader', 'eslint-loader'],
             },
             // image
             {
