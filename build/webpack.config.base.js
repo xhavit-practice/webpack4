@@ -29,6 +29,7 @@ exports.config = {
             // js
             {
                 test: /\.js$/,
+                exclude: /node_modules/,
                 use: ['babel-loader', 'eslint-loader'],
                 // use: ['thread-loader', 'babel-loader', 'eslint-loader'],
             },
