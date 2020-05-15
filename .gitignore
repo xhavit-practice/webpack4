@@ -1,6 +1,7 @@
 # common
 node_modules
 package-lock.json
+.env
 
 # test
 .nyc_output

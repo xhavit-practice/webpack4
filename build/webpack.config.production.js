@@ -1,11 +1,11 @@
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const dotenv = require('dotenv');
 const merge = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+// const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 
 const smp = new SpeedMeasurePlugin();
 
@@ -85,13 +85,17 @@ module.exports = smp.wrap(
                 filename: '[name].[contenthash].css',
             }),
             new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
-            new webpack.DllReferencePlugin({
-                // eslint-disable-next-line
-                manifest: require('./dll/vendor.manifest.json'),
-            }),
-            new AddAssetHtmlPlugin([
-                { filepath: require.resolve('./dll/vendor.dll.js') },
-            ]),
+
+            // // add-asset-html-webpack-plugin 配置^v4以上的html-webpack-plugin有问题，暂时不用
+            // new webpack.DllReferencePlugin({
+            //     // eslint-disable-next-line
+            //     manifest: require('./dll/vendor.manifest.json'),
+            // }),
+            // new AddAssetHtmlPlugin([
+            //     { filepath: require.resolve('./dll/vendor.dll.js') },
+            // ]),
+
+            // // webpack4已经支持失败的时候脚本返回非0，所以这里不需要了，仅供学习
             // handleBuildErrorPlugin,
         ],
     })

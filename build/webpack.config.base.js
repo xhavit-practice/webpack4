@@ -1,4 +1,5 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 // project root dir
@@ -30,7 +31,13 @@ exports.config = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'eslint-loader'],
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: { cacheDirectory: true },
+                    },
+                    'eslint-loader',
+                ],
                 // use: ['thread-loader', 'babel-loader', 'eslint-loader'],
             },
             // image
@@ -54,6 +61,9 @@ exports.config = {
                 },
             },
         ],
+    },
+    optimization: {
+        minimizer: [new TerserPlugin({ cache: true })],
     },
     plugins: [...htmlWebpackPluginConfig, new FriendlyErrorsWebpackPlugin()],
 };
